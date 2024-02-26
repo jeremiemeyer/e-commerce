@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ImagePlus, Trash } from "lucide-react"
+import { ImagePlus, Star, Trash } from "lucide-react"
 import Image from "next/image"
 import { CldUploadWidget } from "next-cloudinary"
 
@@ -51,6 +51,8 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
               >
                 <Trash className="h-4 w-4" />
               </Button>
+              
+
             </div>
             <Image fill className="object-cover" alt="Image" src={url} />
           </div>
